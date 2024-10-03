@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/pagecontact.css">
+    <title>CONTACT</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="assets/images/logo-code.svg" alt="logo-code">
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <img src="assets/images/menu-burger-logo.svg" alt="menu-burger-logo">
+        </div>
+        <nav>
+            <ul class="barre-recherche" id="menu">
+                <li>
+                    <a href="pagehtml.html">HTML</a>
+                </li>
+                <li>
+                    <a href="index.html">ACCEUIL</a>
+                </li>
+                <li>
+                    <a href="pagecss.html">CSS</a>
+                </li>
+                <li>
+                    <a href="pagejavascript.html">JAVASCRIPT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contactez nous</h1>
+        <section>
+            <div class="formulaire">
+                <form action="formulaire" method="post">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required><br><br>
+        
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required><br><br>
+        
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required><br><br>
+            </div>
+        </section>
+        
+        <section class="section-comment">
+            <div class="commentaire">
+                <label for="commentaire" class="case-comment">Commentaires :</label>
+                <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea><br><br>
+        
+                <div class="boutons">
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Supprimer">
+                </div>
+                </form> <!-- Fermeture du formulaire ici -->
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <a href="contact">NOUS CONTACTER</a>
+        <div class="contact-footer">
+            <div>
+                <img src="assets/images/group.svg" alt="group">
+            </div>
+            <div>
+                <img src="assets/images/share.svg" alt="share">
+            </div>
+            <div>
+                <img src="assets/images/thumb-up.svg" alt="thumb-up">
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

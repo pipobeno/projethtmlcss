@@ -1,0 +1,202 @@
+body{
+    background-color: #DDE255;
+    margin: 0%;
+}
+header div img {
+    width: 80px;
+    margin-left: 50px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #226414;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+}
+.barre-recherche {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    
+}
+.barre-recherche a{
+    text-decoration: none;
+    color: #F8DBDB;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+    font-size: large;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: #F98805;
+    margin: 0;
+    padding: 12px;
+    color: #F8DBDB;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.art-explications {
+    display: flex;
+    flex-direction: column;
+    background-color: #F35695;
+    color: #DDE255;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center
+}
+.art-explications p {
+    text-align: center;
+}
+.art-explications {
+    display: flex;
+    flex-direction: column;
+    background-color: #F35695;
+    color: #DDE255;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center
+}
+.art-explications p {
+    text-align: center;
+}
+.div-exemples {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: flex-start;
+    background-color: #1b1b1b;
+    padding: 5%;
+    border-radius: 30px;
+}
+.art-explications p {
+    font-size: larger;
+}
+.div-exemples img {
+    width: 100%;
+    padding: 5%;
+}
+
+.art-diagramme h2 {
+    text-align: center;
+    font-size: x-large;
+    color: #DDE255;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.art-diagramme img{
+    width: 500px;
+}
+.art-diagramme {
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1b1b;
+    border: 10px solid #F98805;
+    color: #DDE255;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center
+}
+.art-style-css {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b1b1b;
+    border: 10px solid #F35695;
+    color: #DDE255;
+    border-radius: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.art-style-css h2 {
+    display: flex;
+    justify-content: center;
+}
+.le-tout {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.le-tout img {
+    padding: 30px;
+}
+footer {
+    background-color: #F98805;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+.contact-footer {
+    display: flex;
+    flex-direction: row;
+}
+footer a {
+    color: #DDE255;
+    text-decoration: none;
+    font-size: x-large;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer img {
+    width: 40px;
+}
+.menu-toggle img {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .barre-recherche{
+        display: none;
+    }
+    .div-exemples {
+        flex-direction: column;
+        align-items: center;
+    }
+    .le-tout {
+        flex-direction: column;
+        align-items: center;
+    }
+    .le-tout img {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        cursor: pointer;
+    }    
+    .menu-toggle img {
+        margin: auto;
+        display: block;
+        width: 50px;
+    }
+}

@@ -1,0 +1,207 @@
+body{
+    background-color: #DDE255;
+    margin: 0%;
+}
+header div img {
+    width: 80px;
+    margin-left: 50px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #226414;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+}
+.barre-recherche {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    
+}
+.barre-recherche a{
+    text-decoration: none;
+    color: #F8DBDB;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+    font-size: large;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: #F98805;
+    margin: 0;
+    padding: 12px;
+    color: #F8DBDB;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.intro {
+    display: flex;
+    flex-direction: row;
+    background-color: #F35695;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 30px;
+    align-items: center 
+}
+.intro-section h2{
+    opacity: 0;
+    margin: 0;
+    height: 0;
+}
+.intro p{
+    color: #226414;
+    background-color: #DDE255;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.intro img {
+    margin: auto;
+    width: 400px;
+}
+.partie1 {
+    background-color: #226414;
+    justify-content: space-around;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center
+}
+.partie1 a {
+    text-decoration: none;
+    color: #F8DBDB;
+    font-size: x-large;
+}
+.partie1 p {
+    color: #F8DBDB;
+}
+.partie2 {
+    background-color: #226414;
+    justify-content: space-around;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center
+}
+.partie2 a {
+    text-decoration: none;
+    color: #F8DBDB;
+    font-size: x-large;
+}
+.partie2 p {
+    color: #F8DBDB;
+}
+.partie3 {
+    background-color: #226414;
+    justify-content: space-around;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center
+}
+.partie3 a {
+    text-decoration: none;
+    color: #F8DBDB;
+    font-size: x-large;
+}
+.partie3 p {
+    color: #F8DBDB;
+}
+footer {
+    background-color: #F98805;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-footer {
+    display: flex;
+    flex-direction: row;
+}
+footer a {
+    color: #DDE255;
+    text-decoration: none;
+    font-size: x-large;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer img {
+    width: 40px;
+}
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro img{
+        width: 300px;
+    }
+    .barre-recherche{
+        display: none;
+    }
+    .intro p{
+        line-height: normal;
+    }
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #F8DBDB;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}

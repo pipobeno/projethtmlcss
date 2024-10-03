@@ -1,0 +1,136 @@
+body{
+    background-color: #DDE255;
+    margin: 0%;
+}
+header div img {
+    width: 80px;
+    margin-left: 50px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #226414;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+}
+.barre-recherche {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    
+}
+.barre-recherche a{
+    text-decoration: none;
+    color: #F8DBDB;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+    font-size: large;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    background-color: #F98805;
+    margin: 0;
+    padding: 12px;
+    color: #F8DBDB;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.formulaire form {
+    display: flex;
+    flex-direction: column;
+    background-color: #F35695;
+    color: #DDE255;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 30px;
+    gap: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center
+}
+#commentaire {
+    width: 500px;
+    height: 250px;
+}
+.section-comment {
+    display: flex;
+    flex-direction: column;
+    background-color: #226414;
+    color: #DDE255;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center
+}
+.commentaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    background-color: #F98805;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-footer {
+    display: flex;
+    flex-direction: row;
+}
+footer a {
+    color: #DDE255;
+    text-decoration: none;
+    font-size: x-large;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer img {
+    width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    nav ul.active {
+        display: flex;
+        margin: auto;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        left: 20px;
+        top: 25px;
+        cursor: pointer;
+    }    
+    .menu-toggle img {
+        margin: auto;
+        display: block;
+        width: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .barre-recherche{
+        display: none;
+    }
+    #commentaire {
+        width: auto;
+    }
+}
