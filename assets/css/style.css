@@ -19,8 +19,8 @@ header nav{
 .barre-recherche {
     display: flex;
     gap: 10px;
+    margin: 0;
     list-style-type: none;
-    
 }
 .barre-recherche a{
     text-decoration: none;
@@ -28,6 +28,10 @@ header nav{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 50px;
     font-size: large;
+    transition: 0.5s;
+}
+.barre-recherche a:hover {
+    color: #F98805;
 }
 h1 {
     display: flex;
@@ -38,6 +42,12 @@ h1 {
     color: #F8DBDB;
     font-size: x-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main a {
+    transition: 0.5s;
+}
+main a:hover {
+    color: #F98805;
 }
 .intro {
     display: flex;
