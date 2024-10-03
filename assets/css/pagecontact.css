@@ -91,7 +91,9 @@ footer a {
 footer img {
     width: 40px;
 }
-
+.menu-toggle {
+    display: none;
+}
 @media screen and (max-width: 768px) {
 
     nav ul {

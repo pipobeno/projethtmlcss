@@ -35,32 +35,33 @@
     </header>
     <main>
         <h1>Contactez nous</h1>
-        <section>
-            <div class="formulaire">
-                <form action="formulaire" method="post">
-                    <label for="nom">Nom :</label>
+
+        <div class="formulaire">
+            <form action="formulaire" method="post">
+                <div>
+                    <label for="nom">Nom</label>
                     <input type="text" id="nom" name="nom" required><br><br>
-        
-                    <label for="prenom">Prénom :</label>
+
+                    <label for="prenom">Prénom</label>
                     <input type="text" id="prenom" name="prenom" required><br><br>
-        
-                    <label for="email">Email :</label>
+
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" required><br><br>
-            </div>
-        </section>
-        
-        <section class="section-comment">
-            <div class="commentaire">
-                <label for="commentaire" class="case-comment">Commentaires :</label>
-                <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea><br><br>
-        
-                <div class="boutons">
-                    <input type="submit" value="Envoyer">
-                    <input type="reset" value="Supprimer">
                 </div>
-                </form> <!-- Fermeture du formulaire ici -->
-            </div>
-        </section>        
+
+                <div class="section-comment">
+                    <div class="commentaire">
+                        <label for="commentaire" class="case-comment">Commentaires :</label>
+                        <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea><br><br>
+
+                        <div class="boutons">
+                            <input type="submit" value="Envoyer">
+                            <input type="reset" value="Supprimer">
+                        </div>
+                    </div>
+                </div>
+            </form> <!-- Fermeture du formulaire ici -->
+        </div>
     </main>
     <footer>
         <a href="contact">NOUS CONTACTER</a>
